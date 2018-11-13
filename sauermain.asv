@@ -25,7 +25,9 @@ while true
     neg = find(class == 0);
     plot(x(pos), y(pos), 'ko', 'MarkerFaceColor', 'g');
     plot(x(neg), y(neg), 'ko', 'MarkerFaceColor', 'r');
-    title(['Plot ',num2str(k + 1)]);
+    title(['Dichotomy ',num2str(k + 1)]);
+    xlabel('x')
+    ylabel('y')
     if k ~= 0
         xpos = [x(pos) x(pos(1))];
         ypos = [y(pos) y(pos(1))];
@@ -38,7 +40,7 @@ while true
 end
 BNK = 0;
 for i = 1:N+1
-    BNK = BNK + nchoosek(N, i - 1);
+    BNK = BNK + factorial(N)/(factorial(N - (i - 1))*factorial(i - 1));
 end
 
-fprintf("B(N,K) = %d\n",BNK);
+fprintf("RHS = %d\n",BNK);
