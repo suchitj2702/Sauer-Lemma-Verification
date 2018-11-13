@@ -6,9 +6,6 @@ The hypothesis set considered here is a convex set. This set contains all hypoth
 
 To create a convex set N points are randomly chosen along the perimeter of a random circle. We consider any dichotomy of these points, assigning arbitrary pattern of +/-1's.
 
-### Observation
-If we connect the +1 points with a polygon, the hypothesis made up of the closed interior of the polygon(which will always be convex) agrees with the dichotomy of all N points.
-
 ## Theory
 For a convex set the growth function, i.e. m(N) = 2^N. Growth function only has  to do with the upper bound of m(N) for an hypothesis set, for a convex set we can easily create this upper bound by taking the N points along the perimeter of a circle.
 
@@ -35,6 +32,8 @@ For the case of convex set, since k -> infinity, we can take the upper limit of 
 * Enter the value of N(number of points to be taken)
 
 ## Observation
+If we connect the +1 points with a polygon, the hypothesis made up of the closed interior of the polygon(which will always be convex) agrees with the dichotomy of all N points.
+
 * RHS is computed and displayed using,
 
   ![](Images/Sauer2.PNG)
