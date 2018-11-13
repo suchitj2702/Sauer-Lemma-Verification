@@ -15,12 +15,15 @@ For a convex set the growth function, i.e. m(N) = 2^N. Growth function only has 
 Since the m(N) = 2^N, this means that any set of N points can be shattered by our hypothesis set H(convex set). This means that the breakpoint = k = infinity and the VC dimension = d = infinity.
 
 If B(N,k) is the maximum number of dichotomies on N points such that no subset of size k of the N points can be shattered by these dichotomies, then,
+
 ![](Images/Sauer.PNG)
 
 Now, according to Sauer's lemma,
+
 ![](Images/Sauer2.PNG)
 
 Thus,
+
 ![](Images/Sauer3.PNG)
 
 For the case of convex set, since k -> infinity, we can take the upper limit of the summation to be N instead of k - 1
@@ -33,9 +36,11 @@ For the case of convex set, since k -> infinity, we can take the upper limit of 
 
 ## Observation
 * RHS is computed and displayed using,
-![](Images/Sauer2.PNG)
+
+  ![](Images/Sauer2.PNG)
 
 * All possible dichotomies plotted as shown below,
+
 !['Dichotomies for N = 5'](Images/Dichotomies.PNG)
 
 ## Result
